@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Summary</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: calibri;
+        text-align: center;
+    }
+
+    .main {
+        width: 100%;
+        height: 100vh;
+        background-color: #e0e8ff;
+        background-image: url("order-summary-component-main/images/pattern-background-desktop.svg");
+        background-position: top;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+
+    .main, .content-section, .section1, .contain {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .order-card {
+        width:350px;
+        height: 540px;
+        background-color: #ffff;
+        border-radius: 20px;
+    }
+
+    .image-section > img {
+        width: 100%;
+        height: 160px;
+        border-radius: 20px 20px 0 0;
+    }
+
+    .content-section {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .section1 {
+        flex-direction: column;
+        padding: 5px 30px;
+    }
+
+    .section1 > h2 {
+        padding-bottom: 10px;
+        color:#1a2344;
+    }
+
+    .section1 > p {
+        padding: 5px;
+    }
+
+    p {
+        color: grey;
+    }
+
+    .section2 {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 3rem;
+        margin: 15px 0px;
+        padding: 15px;
+        border-radius: 10px;
+        background-color: #e0e8ff73;
+    }
+
+    .icon {
+        width: 40px;
+        aspect-ratio: 1;
+        background-image: url("order-summary-component-main/images/icon-music.svg");
+        background-size: cover;
+    }
+
+    .contain {
+        gap: 1rem;
+    }
+
+    .amount > p {
+        padding-top: 2px;
+        font-size: 0.95rem;
+    }
+
+    .adjust > h5{
+        font-size: 0.7rem;
+        font-family: arial;
+        color: #382ae1;
+        font-weight: bolder;
+        text-decoration: underline 1.5px;
+    }
+
+    .section3 {
+        padding: 15px 60px;
+        background-color:#382ae1;
+        border-radius: 10px;
+        color: #ffff;
+    }
+
+    .section4 {
+        margin-top: 10px;
+        padding: 1em 5.7em;
+        background-color: antiquewhite;
+        border-radius: 10px;
+        color: grey;
+    }
+
+</style>
+<body>
+    <div class="main">
+        <div class="order-card">
+            <div class="image-section">
+                <img src="order-summary-component-main/images/illustration-hero.svg" alt="">
+            </div>
+            <div class="content-section">
+                <div class="section1">
+                    <h2>Order Summary</h2>
+                    <p>You can now listen to millions of strongs audiobooks, and podcasts on any devices anywhere you like! </p>
+                </div>
+                <div class="section2">
+                    <div class="contain">
+                        <div class="icon"></div>
+                        <div class="amount">
+                            <h4>Annual Plan</h4>
+                            <p>59.99/year</p>
+                        </div>
+                    </div>
+                    <div class="adjust">
+                        <h5>Change</h5>
+                    </div>
+                </div>
+                <div class="section3">
+                    <h4>Processed to Payment</h4>
+                </div>
+                <div class="section4">
+                    <h4>Cancel Order</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
